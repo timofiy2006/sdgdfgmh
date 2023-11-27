@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="kot.js" />
+    <title>kot</title>
+    <style>
+      body {
+        transition: background-color 0.5s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2>User Time</h2>
+
+      <label for="timeInput">Set Time (Minutes):</label>
+      <input type="number" id="timeInput" value="1" min="1" step="1" />
+      <button onclick="startTimer()">Start</button>
+      <button onclick="stopTimer()">Stop</button>
+
+      <p id="timerOutput"></p>
+      <div
+        id="progressBar"
+        style="
+          width: 0%;
+          height: 20px;
+          background-color: green;
+          margin-top: 10px;
+        "
+      ></div>
+    </div>
+
+    <div>
+      <h2>Time</h2>
+      <p id="currentTime"></p>
+    </div>
+  </body>
+</html>
